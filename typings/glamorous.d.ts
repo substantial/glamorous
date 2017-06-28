@@ -37,7 +37,7 @@ export interface Config {
 
 export interface GlamorousInterface extends HTMLGlamorousInterface, SVGGlamorousInterface {
   <P>(
-    component:Component<P>,
+    component: GlamorousComponent<P>,
     options?: GlamorousOptions,
   ): StyledFunction<P, CSSProperties | React.SVGAttributes<any>>
 
